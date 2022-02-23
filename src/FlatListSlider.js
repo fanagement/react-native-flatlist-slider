@@ -106,7 +106,7 @@ export default class FlatListSlider extends Component {
           windowSize={1}
           initialNumToRender={1}
           maxToRenderPerBatch={1}
-          removeClippedSubviews={true}
+          removeClippedSubviews={Platform.OS === "android"}
         />
         {this.props.indicator && (
           <Indicator
